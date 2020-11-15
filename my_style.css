@@ -1,0 +1,43 @@
+body {
+
+background-image: url(file:///home/yvucko/Images/40021010-hd-abstract-wallpapers.jpg) ;
+}
+
+label {
+  display: block;
+  width: 150px;
+  float: left;
+  margin-left: 30px;
+}
+
+.erreur {
+  color: red;
+}
+
+.title {
+  text-align: center;
+}
+
+.title1 {
+  margin-left: 10px;
+}
+
+.title2 {
+  margin-left: 10px;
+}
+
+.fieldset {
+  display: block;
+  font-size: 12px;
+  margin-right: 1000px;
+  background-color: #C0C0C0;
+}
+
+.button {
+  box-shadow: 0px 5px 0px black;
+}
+
+.blue {
+  border: 2px blue dotted;
+  background-color: #DCDCDC;
+}

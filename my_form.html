@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<link href="my_style.css" type="text/css" rel="stylesheet">
+    <title>monformulaire</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+  <form id ="myform" method="post" action="my_traitement.php">
+<fieldset class="fieldset">
+        <h1 class="title">Formulaire</h1><br>
+<div class="blue">
+<div>
+<p class="title1">Sexe :</p>
+
+<label for="homme">Homme</label>
+<input type="radio" name="sexe" id="homme"/>
+</div>
+
+<div>
+<label for="femme">Femme</label>
+<input type="radio" name="sexe" id="femme"/>
+</div>
+
+<div>
+<label for="autre">Autre</label>
+<input type="radio" name="sexe" id="autre"/>
+</div><br>
+</div><br>
+
+
+<div>
+    <label for="Civilité">Civilité :</label>
+    <select name="mrmme" id="Civilité">
+      <option value="Mr">Mr.</option>
+      <option value="Mme">Mme</option>
+    </select>
+</div><br>
+
+<div>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom"
+    minlength="2" maxlength="30" size="10">
+</div><br>
+
+<div>
+    <label for="prénom">Prénom :</label>
+    <input  class="blue" type="text" id="prénom" name="prénom"
+    minlength="2" maxlength="30" size="10">
+</div><br>
+
+<div class="date">
+  <label for="datedenaissance">Date de naissance :</label>
+    <input type="date" id="datedenaissance" name="datedenaissance">
+</div><br>
+
+<div>
+  <label for="email">E-mail :</label>
+  <input type="email" id="email"
+         size="10">
+</div><br>
+
+<div>
+  <label for="telephone">N° de téléphone :</label>
+    <input class="blue" type="tel" id="telephone" name="telephone"
+           pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+           minlength="10"
+           maxlength="10"
+           size="10">
+</div><br>
+
+<div>
+  <label for="website">Site web :</label>
+    <input type="url" id="website" name="website"
+           minlength="10"
+           maxlength="70"
+           size="10">
+</div><br>
+
+<div>
+  <p class="title2">Hobbies :</p>
+</div>
+
+<div>
+  <label for="jeuxvideos">Jeux Vidéos</label>
+  <input type="checkbox" id="jeuxvideos" name="hobbies"/>
+</div>
+
+<div>
+  <label for="lecture">Lecture</label>
+  <input type="checkbox" id="lecture" name="hobbies"/>
+</div>
+
+<div>
+  <label for="cinema">Cinéma</label>
+  <input type="checkbox" id="cinema" name="hobbies"/>
+</div>
+
+<div>
+  <label for="sport">Sport</label>
+  <input type="checkbox" id="sport" name="hobbies"/>
+</div>
+
+<div>
+  <label for="informatique">Informatique</label>
+  <input type="checkbox" id="informatique" name="hobbies"/>
+</div><br>
+
+<div>
+  <label for="validation"></label>
+  <input class ="button" type="submit" id="validation" name="validation" value="Valider">
+</div>
+</fieldset>
+
+</form>
+
+<p class ="erreur" id="erreur"></p>
+
+<script type="text/javascript" src="traitement.js"></script>
+
+</body>
+
+</html>
